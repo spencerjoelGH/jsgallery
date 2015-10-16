@@ -1,0 +1,40 @@
+<html>
+	<head>
+		<meta charset="utf-8">
+		<link rel="stylesheet" href="css/custom.css" type="text/css" media="screen" charset="utf-8">
+		<title>jsgallery Demo</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+		
+	</head>
+	<body>
+
+		<img class="thumb" src="images/galleryImages/gall-a.png" alt="gall-a" height="525" data-fb="fb0a" data-tw="tw0a" data-pin="pin0a"/>
+		<img class="thumb" src="images/galleryImages/gall-01.png" alt="gall-01" height="525" data-fb="fb0" data-tw="tw0" data-pin="pin0"/>
+		<img class="thumb" src="images/galleryImages/gall-02.png" alt="" width="800" height="600" data-fb="fb1" data-tw="tw1" data-pin="pin1"/>
+		<img class="thumb" src="images/galleryImages/gall-03.png" alt="gall-03" width="800" height="600" data-fb="fb2" data-tw="tw2" data-pin="pin2"/>
+		<img class="thumb" src="images/galleryImages/gall-04.png" alt="gall-04" width="800" height="600" data-fb="fb3" data-tw="tw3" data-pin="pin3"/>
+		<img class="thumb" src="images/galleryImages/gall-05.png" alt="gall-05" width="800" height="600" data-fb="fb4" data-tw="tw4" data-pin="pin4"/>
+		<img class="thumb" src="images/galleryImages/gall-06.png" alt="gall-06" width="800" height="600" data-fb="fb5" data-tw="tw5" data-pin="pin5"/>
+		<img class="thumb" src="images/galleryImages/gall-07.png" alt="gall-07" width="800" height="600" data-fb="fb6" data-tw="tw6" data-pin="pin6"/>
+		
+		
+	</body>
+	
+	<script type="text/javascript" src="bower_components/jquery/dist/jquery.min.js"></script>
+	<link rel="stylesheet" href="js/jquery.jsgallery/jsgallery.css" type="text/css" media="screen" charset="utf-8">
+	<script type="text/javascript" src="js/jquery.jsgallery/jquery.min.jsgallery.min.js"></script>
+	
+	
+	<script>
+		
+		$(function() {
+			$("body").jsgallery({
+				imgSelector : "img", //default is img, ommit this property to use default
+				customHTMLFooter : "<h2><strong>Get Social!!</strong> Facebook - %FB% | Twitter %TW% | Pinterest - %PIN%</h2>",
+				bgClickClose : true
+			});
+		});
+		
+	</script>
+	
+</html>
