@@ -7,6 +7,7 @@
 			globalSelf = self;
 			setTimeout(function(){animateUI("in")}, 300);
 			//globalSelf.css("display","block");
+			
 		},
 		
 		hide : function(self){
@@ -72,8 +73,8 @@
 		//Animate arrows
 		if(dir == "in"){
 			//globalSelf.css("background","rgba(0,0,0,0)");
-			globalSelf.css("display","block");
-			
+			//$(globalSelf).css("display","block");
+			$(globalSelf).css("visibility","visible");
 			//$(globalSelf).css("background","rgba(0,0,0,0.7)");
 
 			
@@ -116,7 +117,7 @@
 			});
 					
 			setTimeout(function(){
-				$(globalSelf).css("display","none");
+				$(globalSelf).css("visibility","hidden");
 				}, 300); 
 		}
 		

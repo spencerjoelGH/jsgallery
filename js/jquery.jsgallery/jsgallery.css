@@ -1,12 +1,19 @@
-.jsgallery-container {
+div.jsgallery-container {
 	position: fixed;
+	background-color:#000;
 	background-color:rgba(0, 0, 0, 0.8);
 	width: 100%; 
 	height: 100%; 
 	top:0;
 	left: 0;
-	display: none;
+/* 	display: none; */
 	z-index: 9999;
+	visibility: hidden;
+}
+
+:root *
+{
+    filter: progid:DXImageTransform.Microsoft.gradient(enabled='false') !important;
 }
 
 .jsgallery-container #jsgall_htmloverlay {
@@ -62,6 +69,7 @@ opacity: 0;
 	transition: left;
 	 -webkit-transition: left 0.5s ease-in-out, right 0.5s ease-in-out; /* Safari */
     transition: left 0.5s ease-in-out, right 0.5s ease-in-out;
+    
 }
 
 .jsgallery-container .arrow-right {
