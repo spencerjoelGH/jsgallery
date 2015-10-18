@@ -164,10 +164,7 @@ $.fn.jsgallery = function(optionsOrMethod) {
 			};
 					
 			if(typeof optionsOrMethod === "object"){
-				if(optionsOrMethod.imgSelector) config.imgSelector = optionsOrMethod.imgSelector;
-				if(optionsOrMethod.startOffset) config.currentImage = optionsOrMethod.startOffset;	
-				if(optionsOrMethod.customHTMLFooter) config.customHTMLFooter = optionsOrMethod.customHTMLFooter;
-				if(optionsOrMethod.bgClickClose == false) config.bgClickClose = false;
+				config = $.extend(config,optionsOrMethod);
 					
 			} else {
 				if(methods[optionsOrMethod]) methods[optionsOrMethod](this);	
