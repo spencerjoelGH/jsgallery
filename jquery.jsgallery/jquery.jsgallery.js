@@ -28,7 +28,7 @@ $(function() {
 			html += '<div id="jsgall_imageContainer" ><img id="jsgallery_displayed_image" class="start_size">';
 			html += '<div id="jsgall_htmloverlay"><span id="customHTMLFooter"></span></div></div>';
 			html += '<div id="jsgall_nextButton" class="gallery-arrow arrow-right start_pos"><i class="fa fa-chevron-right"></i></div>';
-			html += '<div id="jsgall_close"><i class="fa fa-times"></i></div>'; 
+			html += '<div id="jsgall_close"><i class="fa fa-times"></i></div>';
 			
 			
 			
