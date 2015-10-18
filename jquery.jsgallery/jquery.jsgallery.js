@@ -24,11 +24,11 @@ $(function() {
 	}
 	
 	function createGallery(self){
-		var html = '<div id="jsgall_prevButton" class="gallery-arrow arrow-left start_pos"><i class="fa fa-chevron-left"></i></div>';
+		var html = '<div id="jsgall_prevButton" class="gallery-arrow arrow-left start_pos">'+config.leftNavHTML+'</i></div>';
 			html += '<div id="jsgall_imageContainer" ><img id="jsgallery_displayed_image" class="start_size">';
 			html += '<div id="jsgall_htmloverlay"><span id="customHTMLFooter"></span></div></div>';
-			html += '<div id="jsgall_nextButton" class="gallery-arrow arrow-right start_pos"><i class="fa fa-chevron-right"></i></div>';
-			html += '<div id="jsgall_close"><i class="fa fa-times"></i></div>';
+			html += '<div id="jsgall_nextButton" class="gallery-arrow arrow-right start_pos">'+config.rightNavHTML+'</i></div>';
+			html += '<div id="jsgall_close">'+config.closeHTML+'</div>';
 			
 			
 			
@@ -160,7 +160,10 @@ $.fn.jsgallery = function(optionsOrMethod) {
 				imgSelector : "img",
 				currentImage : 0,
 				customHTMLFooter : "",
-				bgClickClose : true
+				bgClickClose : true,
+				leftNavHTML : '<i class="fa fa-chevron-left">',
+				rightNavHTML : '<i class="fa fa-chevron-right">', 
+				closeHTML : '<i class="fa fa-times"></i>'
 			};
 					
 			if(typeof optionsOrMethod === "object"){
