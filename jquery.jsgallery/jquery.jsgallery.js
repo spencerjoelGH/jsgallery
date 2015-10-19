@@ -151,7 +151,6 @@ $(function() {
 $.fn.jsgallery = function(optionsOrMethod) {
 			
 			
-			
 			var newDiv = $('<div></div>').addClass("jsgallery-container");
 			$("body").append(newDiv);
 
@@ -173,6 +172,7 @@ $.fn.jsgallery = function(optionsOrMethod) {
 				if(methods[optionsOrMethod]) methods[optionsOrMethod](this);	
 				
 			}
+			
 			
 			originalSelector = optionsOrMethod.imgSelector;
 			
@@ -204,7 +204,7 @@ $.fn.jsgallery = function(optionsOrMethod) {
 		    	for(var i = 0; i < parents.length; i++){
 			    	if($(parents[i]).attr("media") == "slider"){
 				    	$(parents[i]).addClass("selected_slider_div");
-				    	config.imgSelector = ".selected_slider_div " + originalSelector;
+				    	config.imgSelector = ".selected_slider_div img";
 				    	
 			    	}
 		    	}
