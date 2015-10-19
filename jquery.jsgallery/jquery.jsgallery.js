@@ -150,7 +150,6 @@ $(function() {
 	
 $.fn.jsgallery = function(optionsOrMethod) {
 			
-			
 			var newDiv = $('<div></div>').addClass("jsgallery-container");
 			$("body").append(newDiv);
 
@@ -173,6 +172,7 @@ $.fn.jsgallery = function(optionsOrMethod) {
 				
 			}
 			
+
 			
 			originalSelector = optionsOrMethod.imgSelector;
 			
